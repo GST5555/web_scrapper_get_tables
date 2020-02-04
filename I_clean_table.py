@@ -12,7 +12,7 @@ def cleanhtml(raw_html):
   cleanr = re.compile('<.*?>')
   cleantext = re.sub(cleanr, '', raw_html)
   return cleantext
-#/home/northwaremeraki/Documents/web_scrapper_to_get_table
+
 output = subprocess.check_output([
     './I_get_table', 
     "https://en.wikipedia.org/wiki/List_of_urban_areas_in_the_United_Kingdom",
